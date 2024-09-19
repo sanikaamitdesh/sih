@@ -1,0 +1,106 @@
+/* General page styling */
+body {
+  /* background: rgba(0, 0, 0, 0.5) url('/public/images/hero.jpg') no-repeat center center/cover; */
+  background-color:whitesmoke;
+  font-family: Arial, sans-serif;
+  color: #333;
+  align-items: center;
+}
+
+/* Header styling */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.home-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.home-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.home-header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home-header nav ul li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Login page styling */
+.login-page {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page label {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.login-page input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-page button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-button {
+  background-color: #6c757d;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}

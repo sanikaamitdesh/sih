@@ -1,0 +1,84 @@
+/* General Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #eaeaea;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Footer Information */
+.footer-info {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+/* Add smooth hover effect */
+.footer-info a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s;
+}
+
+.footer-info a:hover {
+  color: #007bff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-links {
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+
+  .footer-info {
+      text-align: center;
+  }
+
+  .footer-info a {
+      margin: 0 5px;
+  }
+}
