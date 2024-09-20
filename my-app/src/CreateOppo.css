@@ -1,0 +1,78 @@
+.create-oppo-container {
+    max-width: 600px;
+    margin: 40px 20px; /* Top and bottom margin 40px, left and right margin 20px */
+    padding: 30px; /* Space inside the container between the border and content */
+    border: 2px solid #007bff; /* Border thickness of 2px, solid style, and color #007bff */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-oppo-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensures the form spans the full width of the container */
+  }
+  
+  .create-oppo-group {
+    margin-bottom: 20px;
+  }
+  
+  .create-oppo-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    display: block; /* Ensures labels take full width */
+  }
+  
+  .create-oppo-group input,
+  .create-oppo-group select,
+  .create-oppo-group textarea {
+    width: 100%; /* Ensures form elements span the full width of the form */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  
+  .create-oppo-group input:focus,
+  .create-oppo-group select:focus,
+  .create-oppo-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .create-oppo-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%; /* Ensures the button spans the full width of the container */
+  }
+  
+  .create-oppo-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .create-oppo-container {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .create-oppo-group label {
+      font-size: 1rem;
+    }
+  
+    .create-oppo-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

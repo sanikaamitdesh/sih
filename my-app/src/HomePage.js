@@ -2,50 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import './HomePage.css';
+import './HomePage.css'; // Import HomePage-specific styles
 import Footer from "./Footer";
-
+import Header from './Header';
 function HomePage() {
   return (
+    <>
+    <Header />
     <div className="home-container">
-      <header className="home-header">
-        <div className="logo"> AYUSH Startup India</div>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/programs">Programs</Link></li>
-            <li><Link to="/resources">Resources</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-        <div className="auth-buttons">
-          <Link to="/login" className="login-button">Login</Link>
-          <Link to="/register" className="signup-button">Sign Up</Link>
-        </div>
-      </header>
-
-      <section className="hero-section">
-        <h1>Welcome to Startup India</h1>
-        <p>Empowering the spirit of entrepreneurship in India.</p>
-        {/* <Link to="/registerstartup" className="cta-button">Register Your Startup</Link> */}
-      </section>
+      
+     
+      <div className='buttons'>
+        <Link to="/startup"><button>Startup</button></Link>
+        <button>Mentor</button>
+       <Link to="/registerinvestor"> <button>Investor</button> </Link>
+        <button>Gov Official</button>
+        <button>Verification Centre</button>
+      </div>
 
       <Carousel
         className="hero-carousel"
         autoPlay
-        interval={2000} // 4 seconds interval
+        interval={2000} // 2 seconds interval
         infiniteLoop
         showThumbs={false}
         showStatus={false}
         swipeable
       >
         <div>
-          {/* <img src="https://images.pexels.com/photos/933964/pexels-photo-933964.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Slide 1" /> */}
-          <img src="https://assets.cntraveller.in/photos/60ba031214ea134a32b77af1/master/w_1600%2Cc_limit/opinioteam.jpg" alt="Slide 1" />
+          <img src="/images/sanika.jpeg" alt="Slide 1" />
         </div>
         <div>
-          <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/02/startupculture1--1-.jpg" alt="Slide 2" />
+          <img src="/images/aditi.jpeg" alt="Slide 2" />
         </div>
         <div>
           <img src="https://img.theweek.in/content/dam/week/magazine/theweek/business/images/2021/5/6/18-Neeraj-Singh.jpg" alt="Slide 3" />
@@ -61,8 +49,9 @@ function HomePage() {
         </div>
       </Carousel>
 
-      <Footer/>
+      <Footer />
     </div>
+    </>
   );
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import "./Login.css";
-
+import Header from "./Header";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,18 +20,7 @@ const Login = () => {
 
   return (
     <>
-      <header className="home-header">
-        <div className="logo">AYUSH Startup India</div>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/programs">Programs</Link></li>
-            <li><Link to="/resources">Resources</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       <div className="login-page">
         <h2>Login</h2>

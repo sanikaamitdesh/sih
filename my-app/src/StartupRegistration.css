@@ -1,0 +1,172 @@
+/* General styles */
+body {
+    background: linear-gradient(to right, #f7f8fa, #e5e9f0);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Form Heading */
+h2 {
+    text-align: center;
+    color:rgb(128, 128, 0);
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Subheading for Educational Details */
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(105, 51, 14);
+}
+
+/* Form Group Layout */
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    width: 200px; /* Fixed width for labels */
+    text-align: right;
+    margin-right: 20px; /* Spacing between label and input */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus Styles for Inputs */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color:rgb(105, 51, 14);
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Document Upload Styles */
+input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Add Education Button */
+button[type="button"] {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #333;
+}
+
+/* Register Button */
+button[type="submit"] {
+    background-color: rgb(128, 128, 0);
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(105, 51, 14);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    label {
+        width: 150px; /* Adjust label width for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    button[type="button"],
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+    }
+
+    label {
+        width: 120px; /* Further reduce label width for small screens */
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 12px;
+    }
+
+    button[type="button"],
+    button[type="submit"] {
+        font-size: 12px;
+    }
+}
+.button{
+    background-color: rgb(105, 51, 14);
+}

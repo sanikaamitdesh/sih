@@ -1,0 +1,65 @@
+/* Application Status Styles */
+.application-status {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap:60px
+  }
+  
+  .timeline {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap:120px
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3498db; /* Default color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .completed {
+    background-color: #2ecc71;
+    padding :20px;
+  }
+  
+  .in-progress {
+    background-color: #f1c40f;
+    padding :20px;
+  }
+  
+  .pending {
+    background-color: #e74c3c;
+    padding :20px;
+  }
+  
+  .upcoming {
+    background-color: #95a5a6;
+    padding :20px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: #3498db; /* Line color */
+  }
+  
+  .phase {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,109 @@
+/* IdeationPage.css */
+
+/* Container for the page */
+.dashboard-container {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+.dashboard-container h1 {
+  font-size: 2.5rem; /* Large heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* Paragraph styles */
+.dashboard-container p {
+  font-size: 1.2rem; /* Smaller paragraph size */
+  color: #666; /* Lighter text color */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* Form styles */
+.ideation-form {
+  display: flex; /* Flex layout for the form */
+  flex-direction: column; /* Column direction */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+/* Label styling */
+label {
+  font-weight: bold; /* Bold labels */
+  margin-bottom: 5px; /* Space below labels */
+  color: #444; /* Darker color for labels */
+}
+
+/* Input and textarea styling */
+.form-input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  transition: border 0.3s; /* Smooth transition for border color */
+}
+
+/* Focus effect */
+.form-input:focus {
+  border-color: rgba(0, 0, 0, 0.2); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Uploaded documents list */
+.uploaded-docs {
+  margin-top: 10px; /* Space above the uploaded docs */
+}
+
+.uploaded-docs h3 {
+  font-size: 1.2rem; /* Heading size for uploaded docs */
+  color: #333; /* Dark text color */
+}
+
+/* Submit button styling */
+/* Submit button styling */
+.submit-button {
+  padding: 12px 20px; /* Padding for the button */
+  background-color: #38190b !important; /* Dark brown background */
+  color: white !important; /* White text */
+  border: none !important; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  display: inline-block; /* Ensure the button is inline-block */
+  text-align: center; /* Center text inside the button */
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #4a2a1a !important; /* Darker brown on hover */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 15px; /* Less padding on small screens */
+  }
+
+  .dashboard-container h1 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .dashboard-container p {
+    font-size: 1rem; /* Smaller paragraph */
+  }
+
+  .form-input, .submit-button {
+    font-size: 0.9rem; /* Smaller font for inputs and buttons */
+  }
+}

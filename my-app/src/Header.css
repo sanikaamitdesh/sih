@@ -1,0 +1,114 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    background-color: rgb(34,139,34);
+    color: white;
+    width: 100%;
+    max-width: 1250px;
+}
+
+.home-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    /* padding-right: 0px;
+    padding-left: 0px; */
+    display: flex;
+}
+
+.home-header nav ul li {
+    margin-left: 20px;
+}
+
+.home-header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .login-button,
+.auth-buttons .signup-button {
+    background-color: rgb(72, 32, 4);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .login-button:hover,
+.auth-buttons .signup-button:hover {
+    background-color: rgb(105, 51, 14);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(34,139,34);
+    color: white; /* Changed color to white for better readability */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 18px;
+}
+
+#ok {
+    color: white; /* Removed the blue color */
+}
+
+h1 {
+    color: white; /* Ensure all headers have white color */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: rgb(72, 32, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: rgb(105, 51, 14);
+}
+
+.hero-carousel {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero-carousel .slide img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+}
